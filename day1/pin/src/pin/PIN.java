@@ -11,12 +11,12 @@ public class PIN {
 		System.out.print("ENTER YOUR PIN: ");
 		
 		String entry = keyboard.next();
-		while ( !entry.equals(pin) )
-		{
+		while ( !entry.equals(pin) ) {
 			System.out.println("\nINCORRECT PIN. TRY AGAIN.");
 			System.out.print("ENTER YOUR PIN: ");
 			entry = keyboard.next();
 		}
+		keyboard.close();
 		System.out.println("\nPIN ACCEPTED. YOU NOW HAVE ACCESS TO YOUR ACCOUNT.");
 
 	}
